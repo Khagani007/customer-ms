@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -27,8 +29,8 @@ public class CustomerEntity {
     @Column(nullable = false)
     private String pin;
 
-    @Column(nullable = false)
-    private Double balance;
+    @Column(name = "balance", columnDefinition = "NUMERIC", nullable = false)
+    private BigDecimal balance;
 
 
 }

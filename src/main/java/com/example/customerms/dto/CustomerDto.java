@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,5 +21,5 @@ public class CustomerDto {
     @NotBlank(message = "Pin is mandatory")
     private String pin;
     @NotBlank(message = "Balance is mandatory")
-    private Double balance;
+    private BigDecimal balance;
 }
