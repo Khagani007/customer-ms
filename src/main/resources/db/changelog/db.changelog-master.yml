@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-customer-table
+      author: Khagani Mammadli
+      changes:
+        - createTable:
+            tableName: customers
+            columns:
+              - column:
+                  name: id
+                  type: BIG-SERIAL
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: full_name
+                  type: VARCHAR(255)
+              - column:
+                  name: age
+                  type: INT
+              - column:
+                  name: pin
+                  type: VARCHAR(10)
+              - column:
+                  name: balance
+                  type: NUMERIC(19, 2)
