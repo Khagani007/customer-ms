@@ -11,15 +11,24 @@ databaseChangeLog:
                   type: BIGINT
                   constraints:
                     primaryKey: true
+                    nullable: false
               - column:
                   name: full_name
                   type: VARCHAR(255)
+                  constraints:
+                    nullable: false
               - column:
                   name: age
                   type: INT
+                  constraints:
+                    nullable: false
               - column:
                   name: pin
                   type: VARCHAR(10)
+                  constraints:
+                    nullable: false
               - column:
                   name: balance
                   type: NUMERIC(19, 2)
+                  constraints:
+                    nullable: false
